@@ -1,0 +1,12 @@
+{
+    "profile": "",
+    "region": "",
+    "configuration": "Release",
+    "function-runtime": "dotnet7",
+    "function-memory-size": 256,
+    "function-timeout": 30,
+    "function-handler": "CustomerManagementAPI",
+    "function-name": "CustomerManagementAPI",
+    "environment-variables": "ASPNETCORE_ENVIRONMENT=Development",
+    "function-url-enable": true
+}

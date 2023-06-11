@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Models\" />
+    <None Remove="Repository\" />
+    <None Remove="Repository\Contract\" />
+    <None Remove="Repository\Service\" />
+    <None Remove="UOW\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Repository\" />
+    <Folder Include="Repository\Contract\" />
+    <Folder Include="Repository\Service\" />
+    <Folder Include="UOW\" />
+  </ItemGroup>
+</Project>
