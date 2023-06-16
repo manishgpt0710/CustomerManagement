@@ -11,15 +11,19 @@ This Web API project is used to perform CRUD operations for parent-child entitie
 ## Integration Testing packages
 
 `dotnet add package xunit`
+
 `dotnet add package Microsoft.EntityFrameworkCore.InMemory`
 
 ## Deploy as Lambda function
 
 - Add below package to convert web api code in lambda function
+  
   `dotnet add package Amazon.Lambda.AspNetCoreServer.Hosting --version 1.5.0`
 
 - Add `aws-lambda-tools-defaults.json` file for configuration of Lambda function
 
-- Below commands to deploy lambda function and
+- Below are commands to deploy lambda function and list functions
+  
   `dotnet lambda deploy-function`
+  
   `aws lambda list-functions`
